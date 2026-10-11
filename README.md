@@ -48,12 +48,15 @@ header{text-align:center;padding:3px}
 #board{width:100%;height:auto;display:block;touch-action:manipulation}
 .hint{text-align:center;min-height:32px;color:#d8e8dc;font-size:12px;line-height:1.8}
 .dock{
- position:sticky;bottom:0;margin-top:auto;z-index:5;
+ position:fixed;left:50%;transform:translateX(-50%);
+ bottom:0;width:100%;max-width:570px;margin:0;
+ z-index:9999;
  padding:12px 10px calc(12px + env(safe-area-inset-bottom));
  background:linear-gradient(180deg,#101712f7,#080b09);
  border-top:1px solid #2e4b35;border-radius:16px 16px 0 0;
  box-shadow:0 -7px 22px #0008;
 }
+.app{padding-bottom:180px}
 .dice-row{display:flex;align-items:center;justify-content:center;gap:14px}
 #dice{
  width:72px;height:72px;flex:0 0 72px;border-radius:17px;
